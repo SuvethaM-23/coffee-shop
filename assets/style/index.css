@@ -1,0 +1,104 @@
+    body {
+        background-color: var(--theme-color);
+        scroll-behavior: smooth;
+    }
+    
+     :root {
+        --theme-color: #6F4E37;
+    }
+    
+    #navbar button {
+        color: aliceblue;
+    }
+    
+    #navbar span {
+        color: aliceblue;
+    }
+    
+    #navbar h5 {
+        color: aliceblue;
+    }
+    
+    #bar-btn i {
+        color: aliceblue;
+    }
+    
+    #bar-ul li {
+        list-style-type: none;
+        color: var(--theme-color);
+    }
+    
+    #content h2,
+    p {
+        color: whitesmoke;
+        font-family: serif;
+    }
+    
+    #content h1 {
+        color: #FFA239;
+        font-family: cursive;
+    }
+    
+    .btn1 {
+        border-radius: 50px;
+        padding: 5px;
+        width: 130px;
+        background-color: #FFA239;
+        color: var(--theme-color);
+        border: 2px solid whitesmoke;
+    }
+    
+    .btn2 {
+        border-radius: 50px;
+        padding: 5px;
+        width: 130px;
+        border: 2px solid whitesmoke;
+        background-color: var(--theme-color);
+        color: whitesmoke;
+    }
+    
+    #content {
+        width: 450px;
+        align-items: center;
+        margin-top: 130px;
+    }
+    
+    @media (max-width:426px) {
+        #content1 {
+            flex-direction: column;
+            /* stack items */
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            gap: 20px;
+        }
+        #content1 img {
+            width: 300px;
+            height: 200px;
+        }
+        #content {
+            font-size: small;
+            text-align: center;
+            align-items: center;
+            width: 426px;
+            margin-top: 0px;
+        }
+    }
+    
+    #about-page h1 {
+        font-family: serif;
+        color: #FFA239;
+        text-align: center;
+    }
+    
+    #about-page h5 {
+        font-family: cursive;
+        color: whitesmoke;
+        text-align: center;
+    }
+    
+    #about-page p {
+        color: whitesmoke;
+        text-align: center;
+        align-items: center;
+    }

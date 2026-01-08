@@ -5,11 +5,83 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Coffee-Shop</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <link rel="stylesheet" href="assets/style/index.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css" integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw==" crossorigin="anonymous" referrerpolicy="no-referrer"
+    />
 </head>
 
 <body>
-
+    <nav class=" navbar d-flex justify-content-between container" id="navbar">
+        <div>
+            <span><img src="data:image/png;base64,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 "
+                alt="hot-beverage "></span>
+            <span>COFFE</span>
+        </div>
+        <div class="d-lg-flex gap-3 d-none">
+            <div>
+                <button class="btn">Home</button>
+            </div>
+            <div>
+                <button class="btn">About</button>
+            </div>
+            <div>
+                <button class="btn">Menu</button>
+            </div>
+            <div>
+                <button class="btn">Testimonials</button>
+            </div>
+            <div>
+                <button class="btn">Gallery</button>
+            </div>
+            <div>
+                <button class="btn">Contact</button>
+            </div>
+        </div>
+        <div class="d-lg-none d-flex">
+            <button class="btn" id="bar-btn"><i class="fa-solid fa-bars" data-bs-toggle="offcanvas" data-bs-target="#offcanvas"></i></button>
+            <div class="offcanvas offcanvas-start show" id="offcanvas">
+                <div class="offcanvas-header">
+                    <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                </div>
+                <div class="offcanvas-body">
+                    <ul id="bar-ul">
+                        <li>Home</li>
+                        <li>About</li>
+                        <li>Menu</li>
+                        <li>Testimonials</li>
+                        <li>Gallery</li>
+                        <li>Contact</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </nav>
+    <div class="d-flex justify-content-center mt-5 gap-5 align-content-center text-center" id="content1">
+        <div class="" id="content" data-aos="fade-right" data-aos-duration="3000">
+            <h1>Best Coffe</h1>
+            <h2>Make your day great with our special coffee!</h2>
+            <p>Welcome to our coffee paradise, where every bean tells a story and every cup sparks joy.</p>
+            <button class="btn1">Order Now</button> <button class="btn2">Contact Us</button>
+        </div>
+        <div class="" data-aos="fade-left" data-aos-duration="3000"><img src="./assets/image/coffee.png" alt="" width="500px" height="500px"></div>
+    </div>
+    <div id="about-page" class="container">
+        <h1>About</h1><br>
+        <div>
+            <h5>Welcome to Coffee Shop, where every cup tells a story.</h5>
+            <p>We believe that coffee is more than just a drink — it’s an experience. From carefully selected coffee beans to freshly brewed cups, we are passionate about delivering rich flavors and warm moments to every customer. Our coffee is made using
+                high-quality beans sourced from trusted farms, roasted to perfection, and brewed with love. Whether you enjoy a strong espresso, a creamy cappuccino, or a smooth latte, we have something special for every coffee lover.</p>
+        </div>
+        <div><img src="" alt=""></div>
+    </div>
 </body>
+<script>
+    AOS.init();
+</script>
 
 </html>
