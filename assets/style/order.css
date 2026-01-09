@@ -1,0 +1,79 @@
+            .root {
+                --theme-color: #6F4E37;
+            }
+            
+            body {
+                background-color: #6F4E37;
+            }
+            
+            #navbar {
+                position: sticky;
+                top: 0px;
+                z-index: 1000;
+                background-color: whitesmoke;
+            }
+            
+            #navbar a {
+                color: #6F4E37;
+                text-decoration: none;
+            }
+            
+            #navbar span {
+                color: #6F4E37;
+                ;
+            }
+            
+            #navbar h5 {
+                color: aliceblue;
+            }
+            
+            #bar-btn i {
+                color: #6F4E37;
+            }
+            
+            #bar-ul li {
+                list-style-type: none;
+                color: var(--theme-color);
+            }
+            
+            #input {
+                width: 250px;
+                color: #6F4E37;
+            }
+            
+            .h3 {
+                font-family: cursive;
+                color: whitesmoke;
+                text-align: center;
+            }
+            
+            .h1 {
+                font-family: serif;
+                color: whitesmoke;
+                text-align: center;
+            }
+            
+            #coffee-list {
+                font-family: cursive;
+            }
+            
+            .img-box {
+                color: whitesmoke;
+                text-align: center;
+            }
+            /* @media(max-width:426px) {
+                #coffee-list {
+                    overflow-x: hidden;
+                }
+                .card {
+                    width: 5rem;
+                    padding: 30px;
+                }
+                .card img {
+                    width: 100px;
+                    height: 100px;
+                }
+                .card-body {
+                    font-size: small;
+                }
+            } */

@@ -1,18 +1,26 @@
     body {
         background-color: var(--theme-color);
-        scroll-behavior: smooth;
     }
     
      :root {
         --theme-color: #6F4E37;
     }
     
-    #navbar button {
-        color: aliceblue;
+    #navbar {
+        position: sticky;
+        top: 0px;
+        z-index: 1000;
+        background-color: whitesmoke;
+    }
+    
+    #navbar a {
+        color: #6F4E37;
+        text-decoration: none;
     }
     
     #navbar span {
-        color: aliceblue;
+        color: #6F4E37;
+        ;
     }
     
     #navbar h5 {
@@ -20,7 +28,7 @@
     }
     
     #bar-btn i {
-        color: aliceblue;
+        color: #6F4E37;
     }
     
     #bar-ul li {
@@ -64,7 +72,7 @@
     }
     
     @media (max-width:426px) {
-        #content1 {
+        .content1 {
             flex-direction: column;
             /* stack items */
             justify-content: center;
@@ -72,7 +80,7 @@
             text-align: center;
             gap: 20px;
         }
-        #content1 img {
+        .content1 img {
             width: 300px;
             height: 200px;
         }
@@ -85,20 +93,57 @@
         }
     }
     
-    #about-page h1 {
+    .about-page h1 {
         font-family: serif;
         color: #FFA239;
         text-align: center;
     }
     
-    #about-page h5 {
+    .about-page h3 {
         font-family: cursive;
+        color: #FFA239;
+        text-align: center;
+    }
+    
+    .about-page p {
+        color: whitesmoke;
+        text-align: center;
+        align-items: center;
+    }
+    
+    #couple-img {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    /* #about-icon {
+        text-align: center;
+        color: whitesmoke;
+    } */
+    
+    #about-ul {
+        color: whitesmoke;
+        align-items: center;
+        justify-content: center;
+        display: flex;
+    }
+    
+    #about-ul ul {
+        list-style-type: circle;
+    }
+    
+    #menu-list {
         color: whitesmoke;
         text-align: center;
     }
     
-    #about-page p {
+    #menu-list p {
         color: whitesmoke;
         text-align: center;
-        align-items: center;
+    }
+    
+    .menu-h1 {
+        text-align: center;
+        font-family: serif;
+        color: #FFA239;
     }
